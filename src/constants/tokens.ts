@@ -1,0 +1,30 @@
+export const DESIGN_TOKENS = {
+  colors: {
+    bgPrimary: '#050505',
+    bgSecondary: '#0D0D0E',
+    surfaceBase: '#121214',
+    surfaceElevated: '#1A1A1E',
+    surfaceHover: '#222226',
+    surfaceActive: '#2A2A30',
+    textPrimary: '#F4F4F6',
+    textSecondary: '#8E8E93',
+    textMuted: '#545458',
+    textInverse: '#050505',
+    borderSubtle: 'rgba(255, 255, 255, 0.08)',
+    borderMedium: 'rgba(255, 255, 255, 0.16)',
+    borderStrong: 'rgba(255, 255, 255, 0.32)',
+    statusSuccess: '#10B981',
+    statusError: '#EF4444',
+    statusWarning: '#F59E0B',
+  },
+  typography: {
+    fontSans: "'Space Grotesk', system-ui, -apple-system, sans-serif",
+    fontMono: "'JetBrains Mono', monospace",
+  },
+  motion: {
+    durationFast: 0.15,
+    durationNormal: 0.25,
+    durationSlow: 0.4,
+    easeStandard: [0.16, 1, 0.3, 1] as const,
+  },
+} as const;
