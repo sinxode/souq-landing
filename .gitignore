@@ -1,11 +1,10 @@
+# Next.js Build Output & Cache
+.next
+out
+
 # Dependencies
 node_modules
 .pnpm-store
-
-# Production Builds
-dist
-dist-ssr
-*.local
 
 # Environment Variables
 .env.local
