@@ -47,7 +47,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenWaitlist }) => {
                 variant="primary"
                 size="lg"
                 onClick={() => onOpenWaitlist('patron')}
-                className="w-full sm:w-auto min-w-[200px]"
+                className="w-full sm:w-auto min-w-[220px]"
               >
                 <span>{COPY_CATALOG.hero.primaryCTA}</span>
                 <ArrowRight className="w-4 h-4 ml-2" />
@@ -57,7 +57,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenWaitlist }) => {
                 variant="secondary"
                 size="lg"
                 onClick={() => onOpenWaitlist('merchant')}
-                className="w-full sm:w-auto min-w-[200px]"
+                className="w-full sm:w-auto min-w-[220px]"
               >
                 <span>{COPY_CATALOG.hero.secondaryCTA}</span>
               </Button>
