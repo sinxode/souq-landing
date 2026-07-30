@@ -12,9 +12,9 @@
 ### 1.1 Brand Identity Overview
 * **Brand Name:** SOUQ
 * **Domain:** `https://souqonline.in`
-* **Product Vision:** SOUQ is an upcoming premium marketplace designed to connect discerning consumers with verified, highly trusted local businesses and artisanal merchants.
+* **Product Vision:** SOUQ is an upcoming premium marketplace designed to connect discerning consumers with verified, highly trusted local businesses and artisanal suppliers.
 * **Current State:** The core marketplace architecture is under active development.
-* **Temporary Page Purpose:** Serve as an uncompromised, hyper-curated teaser page. It must cultivate mystery, project undeniable prestige, establish immediate credibility, and capture high-intent early adopters and merchant partners prior to official platform launch.
+* **Temporary Page Purpose:** Serve as an uncompromised, hyper-curated teaser page. It must cultivate mystery, project undeniable prestige, establish immediate credibility, and capture high-intent early adopters and supplier partners prior to official platform launch.
 
 ### 1.2 Core Philosophy
 > *"If this temporary teaser page looks this intentional, the underlying platform must be extraordinary."*
@@ -66,15 +66,15 @@ The visual language of SOUQ merges quiet luxury with high-end technology interfa
 ┌─────────────────────────────────────────────────────────┐
 │                SECTION 2: TRUST & VISION                │
 │  • 3-Column Pillar Matrix:                              │
-│    1. Vetted Merchants  2. Direct Access  3. Zero Noise │
+│    1. Vetted Suppliers  2. Direct Access  3. Zero Noise │
 └─────────────────────────────────────────────────────────┘
                             │
                             ▼
 ┌─────────────────────────────────────────────────────────┐
-│                SECTION 3: MERCHANT PREVIEW              │
+│                SECTION 3: SUPPLIER PREVIEW              │
 │  • Business Inquiry Callout                             │
 │  • "Elevate Your Business Footprint"                    │
-│  • Merchant Access Form Trigger                         │
+│  • Supplier Access Form Trigger                         │
 └─────────────────────────────────────────────────────────┘
                             │
                             ▼
@@ -95,7 +95,7 @@ The visual language of SOUQ merges quiet luxury with high-end technology interfa
 Triggers the modal dialog containing the 2-step consumer waitlist experience.
 
 ### 4.2 Secondary CTA: "Partner With SOUQ"
-Opens the Waitlist Modal pre-set to the "Merchant / Business" track segment.
+Opens the Waitlist Modal pre-set to the "Supplier / Business" track segment.
 
 ---
 
@@ -109,47 +109,47 @@ Opens the Waitlist Modal pre-set to the "Merchant / Business" track segment.
 ### 5.2 Hero Section
 * **Badge Text:** `AUTUMN 2026 // LIMITED INVITATIONAL COHORTS`
 * **Main Headline:** `Curated Commerce. Uncompromising Quality.`
-* **Body Paragraph:** `SOUQ connects discerning patrons with India’s most exceptional verified businesses and independent merchants. Experience a marketplace built on trust, elegance, and zero noise.`
+* **Body Paragraph:** `SOUQ connects discerning patrons with India’s most exceptional verified businesses and independent suppliers. Experience a marketplace built on trust, elegance, and zero noise.`
 * **Primary Button Text:** `Request Early Access`
 * **Secondary Button Text:** `Partner With SOUQ`
-* **Micro Security Callout:** `🔒 By invitation only. No spam. Unsubscribe anytime.`
+* **Micro Security Callout:** `By invitation only. No spam. Unsubscribe anytime.`
 
 ### 5.3 Pillar Section (Trust & Vision)
 * **Section Tag:** `THE SOUQ STANDARD`
 * **Section Title:** `Engineered for trust.`
 * **Card 1 Tagline:** `01 / CURATION`
-* **Card 1 Title:** `Strictly Vetted Merchants`
+* **Card 1 Title:** `Strictly Vetted Suppliers`
 * **Card 1 Body:** `Every seller on SOUQ passes a multi-point verification process. We eliminate low-quality noise so only authentic craft, products, and services remain.`
 * **Card 2 Tagline:** `02 / TRANSPARENCY`
 * **Card 2 Title:** `Direct Business Connections`
 * **Card 2 Body:** `Interact with verified local enterprises with total clarity. SOUQ bridges patrons and creators through seamless digital storefronts.`
 * **Card 3 Tagline:** `03 / EXCLUSIVITY`
 * **Card 3 Title:** `Cohort-Based Access`
-* **Card 3 Body:** `Platform access is released in controlled phases to guarantee optimal service, merchant integrity, and concierge-level experience.`
+* **Card 3 Body:** `Platform access is released in controlled phases to guarantee optimal service, supplier integrity, and concierge-level experience.`
 
-### 5.4 Merchant Partner Section
-* **Badge Text:** `MERCHANT INVITATIONS OPEN`
+### 5.4 Supplier Partner Section
+* **Badge Text:** `SUPPLIER INVITATIONS OPEN`
 * **Headline:** `Elevate your business footprint.`
-* **Body Text:** `Are you a verified brand, manufacturer, or local business owner? Join our founding merchant cohort before public rollout.`
-* **Button Text:** `Apply for Merchant Access →`
+* **Body Text:** `Are you a verified brand, manufacturer, or local business owner? Join our founding supplier cohort before public rollout.`
+* **Button Text:** `Apply for Supplier Access →`
 * **Supporting Note:** `Priority onboarding granted to verified local businesses.`
 
 ### 5.5 Footer Section
-* **Copyright Notice:** `© 2026 SOUQ ONLINE. ALL RIGHTS RESERVED.`
+* **Copyright Notice:** `© 2026 SOUQ. ALL RIGHTS RESERVED.`
 * **Domain Tag:** `SOUQONLINE.IN`
-* **Status Monitor:** `● SYSTEM STATUS: ALL INFRASTRUCTURE NOMINAL`
+* **Status Monitor:** `SYSTEM STATUS: ALL INFRASTRUCTURE NOMINAL`
 * **Social Link Text:** `INSTAGRAM ↗`
 * **Legal Links:** `PRIVACY POLICY` | `TERMS OF ACCESS`
 
 ### 5.6 Waitlist Modal Interface
 * **Patron Modal Title:** `Join the SOUQ Waitlist`
 * **Patron Description:** `Enter your email to request an inaugural invitation code when Cohort 1 opens.`
-* **Merchant Modal Title:** `Apply as a Merchant Partner`
-* **Merchant Description:** `Tell us about your enterprise to receive priority merchant onboarding.`
+* **Supplier Modal Title:** `Apply as a Supplier Partner`
+* **Supplier Description:** `Tell us about your enterprise to receive priority supplier onboarding.`
 * **Success Title (Patron):** `You are on the list.`
 * **Success Subtitle (Patron):** `Your access request has been recorded. We have dispatched a confirmation receipt to your inbox.`
-* **Success Title (Merchant):** `Application Received.`
-* **Success Subtitle (Merchant):** `Our curation team will review your business credentials. Expect a follow-up email within 48 hours.`
+* **Success Title (Supplier):** `Application Received.`
+* **Success Subtitle (Supplier):** `Our curation team will review your business credentials. Expect a follow-up email within 48 hours.`
 
 ---
 
