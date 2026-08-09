@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Space_Grotesk, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import { SITE_CONFIG } from '@/constants/site';
+import { ClarityAnalytics } from '@/components/analytics/clarity';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -69,6 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} dark`}>
       <body className="bg-[#050505] text-[#F4F4F6] font-sans antialiased selection:bg-white/20 selection:text-white overflow-x-hidden">
+        <ClarityAnalytics />
         {children}
       </body>
     </html>

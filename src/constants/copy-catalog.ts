@@ -10,7 +10,7 @@ export const COPY_CATALOG = {
     body: 'SOUQ connects discerning patrons with India’s most exceptional verified businesses and independent merchants. Experience a marketplace built on trust, elegance, and zero noise.',
     primaryCTA: 'Request Early Access',
     secondaryCTA: 'Become a Merchant Partner',
-    securityNote: '🔒 By invitation only. No spam. Unsubscribe anytime.',
+    securityNote: 'By invitation only. No spam. Unsubscribe anytime.',
   },
   pillars: {
     sectionTag: 'THE SOUQ STANDARD',

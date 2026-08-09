@@ -4,10 +4,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
-import { Badge } from '../ui/badge';
 import { COPY_CATALOG } from '@/constants/copy-catalog';
 import { isValidIndianMobile, isValidEmail } from '@/lib/utils';
-import { X, CheckCircle2, ShieldCheck, Sparkles, Copy, Check } from 'lucide-react';
+import { X, CheckCircle2, Copy, Check } from 'lucide-react';
+import { trackClarityEvent, setClarityTag, identifyClarityUser } from '@/components/analytics/clarity';
 import type { WaitlistTrack } from '@/types';
 
 interface WaitlistModalProps {
@@ -45,6 +45,11 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
       setEmail('');
       setCohortCode(null);
       setCopied(false);
+      
+      // Clarity tracking
+      trackClarityEvent('modal_opened');
+      setClarityTag('track_type', initialTrack);
+
       setTimeout(() => inputRef.current?.focus(), 150);
     }
   }, [isOpen, initialTrack]);
@@ -63,6 +68,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
     if (cohortCode) {
       navigator.clipboard.writeText(cohortCode);
       setCopied(true);
+      trackClarityEvent('cohort_code_copied');
       setTimeout(() => setCopied(false), 2000);
     }
   };
@@ -99,9 +105,15 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
           return;
         }
 
-        setCohortCode(result.data?.cohortCode || 'SOUQ-000127');
+        const generatedCode = result.data?.cohortCode || 'SOUQ-000127';
+        setCohortCode(generatedCode);
         setIsLoading(false);
         setIsSuccess(true);
+
+        // Microsoft Clarity Analytics Event Tracking
+        trackClarityEvent('early_access_requested');
+        setClarityTag('cohort_code', generatedCode);
+        identifyClarityUser(mobile.trim(), undefined, undefined, 'Early Access Patron');
       } catch (err) {
         console.error('Early access submission error:', err);
         setError(COPY_CATALOG.modal.errors.networkError);
@@ -145,6 +157,11 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
 
         setIsLoading(false);
         setIsSuccess(true);
+
+        // Microsoft Clarity Analytics Event Tracking
+        trackClarityEvent('merchant_lead_submitted');
+        setClarityTag('merchant_brand', brandName.trim());
+        identifyClarityUser(email.trim().toLowerCase(), undefined, undefined, brandName.trim());
       } catch (err) {
         console.error('Merchant lead submission error:', err);
         setError(COPY_CATALOG.modal.errors.networkError);
@@ -197,6 +214,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
                     onClick={() => {
                       setTrack('patron');
                       setError(null);
+                      setClarityTag('track_type', 'patron');
                     }}
                     className={`flex-1 py-2 text-xs font-medium rounded-lg transition-all duration-200 ${
                       track === 'patron'
@@ -211,6 +229,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
                     onClick={() => {
                       setTrack('merchant');
                       setError(null);
+                      setClarityTag('track_type', 'merchant');
                     }}
                     className={`flex-1 py-2 text-xs font-medium rounded-lg transition-all duration-200 ${
                       track === 'merchant'
