@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Space_Grotesk, JetBrains_Mono } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import { SITE_CONFIG } from '@/constants/site';
 import { ClarityAnalytics } from '@/components/analytics/clarity';
@@ -69,6 +70,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} dark`}>
+      <head>
+        {/* Microsoft Clarity Script Integration */}
+        <Script id="microsoft-clarity-script" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "xzpp3ln7nk");
+          `}
+        </Script>
+      </head>
       <body className="bg-[#050505] text-[#F4F4F6] font-sans antialiased selection:bg-white/20 selection:text-white overflow-x-hidden">
         <ClarityAnalytics />
         {children}
